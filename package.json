@@ -1,0 +1,23 @@
+{
+  "name": "mu-types",
+  "version": "1.8.0",
+  "description": "Types for the helpers in the js template for mu services",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahien/mu-types.git"
+  },
+  "keywords": [
+    "mu-semtech"
+  ],
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "typescript": "^4.6.2"
+  },
+  "license": "MIT",
+  "homepage": "https://mu.semte.ch",
+  "main": "index.d.ts",
+  "types": "index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  }
+}
