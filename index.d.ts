@@ -19,7 +19,7 @@ declare module "mu" {
   export const query: (query: string) => Promise<SparqlResponse>;
   export const update: (query: string) => Promise<void>;
   export const uuid: () => string;
-  export const sparqlEscape: (value: any, type: string) => string;
+  export const sparqlEscape: (value: unknown, type: string) => string;
   export const sparqlEscapeString: (value: string) => string;
   export const sparqlEscapeUri: (value: string) => string;
   export const sparqlEscapeInt: (value: number) => string;
@@ -37,11 +37,11 @@ declare module "mu" {
   // this is a tagged template string function
   export const sparql: (
     strings: TemplateStringsArray,
-    ...values: any[]
+    ...values: unknown[]
   ) => string;
   export const SPARQL: (
     strings: TemplateStringsArray,
-    ...values: any[]
+    ...values: unknown[]
   ) => string;
 
   const mu: {
